@@ -1,0 +1,37 @@
+# Experiment 3: LLM Debate Simulation
+# Эксперимент 3: Симуляция LLM-Дебатов
+
+experiment:
+  name: "llm_debate_simulation"
+  version: "1.0"
+  seed: 42
+  description: |
+    Дебаты между ИИ-агентами с разными личностями
+    Debate between AI agents with different personalities
+
+agent:
+  action_space_dim: 5  # Agree, Disagree, Neutral, Question, Elaborate
+  hidden_dim: 64
+  learning_rate: 0.0005
+  n_agents: 4
+  use_llm: false  # true для реальных LLM
+
+swarm:
+  lambda_diversity: 0.2
+  coordination_weight: 0.8
+  min_individuality: 0.05
+
+debate:
+  n_rounds: 10
+  topic: "AI safety considerations"
+  consensus_threshold: 0.8
+
+hierarchy:
+  n_levels: 2
+  alpha: 0.7
+  lambda_0: 1.0
+
+output:
+  save_results: true
+  visualization: true
+  log_level: "INFO"

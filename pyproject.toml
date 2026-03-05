@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gra-swarm"
+version = "0.1.0"
+description = "Swarm Superintelligence via Cognitive Foam Minimization"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+authors = [
+    {name = "YOUR_NAME", email = "your.email@example.com"}
+]
+keywords = [
+    "multi-agent systems",
+    "swarm intelligence",
+    "AGI",
+    "GRA formalism",
+    "cognitive foam",
+    "многоагентные системы",
+    "роевой интеллект",
+]
+
+[project.optional-dependencies]
+dev = [
+    "black>=21.0",
+    "flake8>=3.9.0",
+    "mypy>=0.910",
+    "pre-commit>=2.13.0",
+    "pytest>=6.2.0",
+]
+docs = [
+    "mkdocs>=1.2.0",
+    "mkdocs-material>=7.0.0",
+]
+
+[tool.black]
+line-length = 100
+target-version = ['py39', 'py310', 'py311']
+
+[tool.isort]
+profile = "black"
+line_length = 100
+
+[tool.mypy]
+ignore_missing_imports = true
+python_version = "3.10"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --cov=gra_swarm"

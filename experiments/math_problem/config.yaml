@@ -1,0 +1,36 @@
+# GRA-Swarm Experiment Configuration
+# Конфигурация Эксперимента
+
+experiment:
+  name: "math_problem_solving"
+  version: "1.0"
+  seed: 42
+  description: |
+    Сравнение одиночного агента и роя
+    Single agent vs swarm comparison
+
+agent:
+  action_space_dim: 100
+  hidden_dim: 64
+  learning_rate: 0.001
+  n_agents: 4
+
+swarm:
+  lambda_diversity: 0.1
+  coordination_weight: 1.0
+  min_individuality: 0.01
+
+training:
+  n_episodes: 100
+  batch_size: 32
+  foam_threshold: 0.001
+
+hierarchy:
+  n_levels: 2
+  alpha: 0.7
+  lambda_0: 1.0
+
+output:
+  save_results: true
+  visualization: true
+  log_level: "INFO"

@@ -1,0 +1,36 @@
+# Experiment 2: Multi-Objective Optimization
+# Эксперимент 2: Многокритериальная Оптимизация
+
+experiment:
+  name: "multi_objective_optimization"
+  version: "1.0"
+  seed: 42
+  description: |
+    Оптимизация с несколькими целями
+    Multi-objective optimization task
+
+agent:
+  action_space_dim: 50
+  hidden_dim: 32
+  learning_rate: 0.001
+  n_agents: 6
+
+swarm:
+  lambda_diversity: 0.15
+  coordination_weight: 1.2
+  min_individuality: 0.02
+
+optimization:
+  n_objectives: 3
+  pareto_weight: 0.3
+  n_episodes: 150
+
+hierarchy:
+  n_levels: 3
+  alpha: 0.6
+  lambda_0: 1.0
+
+output:
+  save_results: true
+  visualization: true
+  log_level: "INFO"

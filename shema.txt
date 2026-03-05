@@ -1,0 +1,74 @@
+GRA-Swarm/
+├── .github/
+│   └── workflows/
+│       ├── ci.yml              # Continuous Integration
+│       └── publish.yml         # Auto-publish to PyPI
+├── docs/
+│   ├── index.md                # Главная документация
+│   ├── theory/
+│   │   ├── gra_formalism.md    # Математика GRA из твоего файла
+│   │   ├── swarm_foam.md       # Формализм пены роя
+│   │   └── nullification.md    # Теорема об обнулении
+│   ├── api/
+│   │   ├── agents.md           # API агентов
+│   │   ├── foam.md             # API расчёта пены
+│   │   └── optimizer.md        # API оптимизатора
+│   └── examples/
+│       ├── quickstart.md       # Быстрый старт
+│       └── experiment_guide.md # Как запустить эксперимент
+├── src/
+│   ├── gra_swarm/
+│   │   ├── __init__.py
+│   │   ├── core/
+│   │   │   ├── __init__.py
+│   │   │   ├── agent.py        # Базовый класс агента
+│   │   │   ├── personality.py  # Генератор индивидуальности
+│   │   │   └── policy.py       # Вероятностная политика
+│   │   ├── foam/
+│   │   │   ├── __init__.py
+│   │   │   ├── calculator.py   # Расчёт Φ_swarm
+│   │   │   ├── diversity.py    # Мера I(l) через KL-дивергенцию
+│   │   │   └── metrics.py      # Дополнительные метрики
+│   │   ├── optimizer/
+│   │   │   ├── __init__.py
+│   │   │   ├── gra_optimizer.py # GRA-оптимизатор
+│   │   │   └── scheduler.py    # Планировщик обучения
+│   │   ├── hierarchy/
+│   │   │   ├── __init__.py
+│   │   │   ├── levels.py       # Уровни 0-K из мультиверса
+│   │   │   └── projector.py    # Операторы P_Gl
+│   │   └── utils/
+│   │       ├── __init__.py
+│   │       ├── config.py       # Конфигурация
+│   │       └── visualization.py # Визуализация результатов
+│   └── tests/
+│       ├── __init__.py
+│       ├── test_agent.py
+│       ├── test_foam.py
+│       └── test_optimizer.py
+├── experiments/
+│   ├── __init__.py
+│   ├── math_problem/           # Эксперимент 1: Математика
+│   │   ├── config.yaml
+│   │   ├── run.py
+│   │   └── results/
+│   ├── optimization/           # Эксперимент 2: Оптимизация
+│   │   ├── config.yaml
+│   │   ├── run.py
+│   │   └── results/
+│   └── llm_debate/             # Эксперимент 3: LLM-дебаты
+│       ├── config.yaml
+│       ├── run.py
+│       └── results/
+├── notebooks/
+│   ├── 01_quickstart.ipynb     # Быстрый старт
+│   ├── 02_foam_visualization.ipynb
+│   └── 03_hierarchy_demo.ipynb
+├── .gitignore
+├── .pre-commit-config.yaml
+├── LICENSE                     # MIT или Apache 2.0
+├── README.md                   # Главная страница
+├── requirements.txt            # Зависимости
+├── setup.py                    # Установка пакета
+├── pyproject.toml              # Modern Python packaging
+└── CITATION.cff                # Для цитирования в науке

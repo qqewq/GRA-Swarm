@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below. / Если вы используете это ПО, пожалуйста, цитируйте."
+title: "GRA-Swarm: Swarm Superintelligence via Cognitive Foam Minimization"
+abstract: "A multi-agent framework where diversity of AI personalities + hierarchical coordination through foam minimization leads to emergent superintelligence. / Многоагентный фреймворк, где разнообразие ИИ-личностей + иерархическая согласованность через минимизацию пены приводит к эмерджентному сверхинтеллекту."
+authors:
+  - family-names: "YOUR_LAST_NAME"
+    given-names: "YOUR_FIRST_NAME"
+    orcid: "https://orcid.org/YOUR_ORCID"
+    email: "your.email@example.com"
+version: 0.1.0
+doi: "10.5281/zenodo.XXXXXXX"
+date-released: 2026-03-05
+url: "https://github.com/YOUR_USERNAME/GRA-Swarm"
+license: MIT
+keywords:
+  - "multi-agent systems / многоагентные системы"
+  - "swarm intelligence / роевой интеллект"
+  - "AGI architecture / архитектура ОИИ"
+  - "GRA formalism / формализм GRA"
+  - "cognitive foam / когнитивная пена"
+  - "diversity optimization / оптимизация разнообразия"
+repository-code: "https://github.com/YOUR_USERNAME/GRA-Swarm"
